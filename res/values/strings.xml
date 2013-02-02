@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ibSwitch_mute">Touch to Mute</string>
+    <string name="ibSwitch_unmute">Touch to UnMute</string>
+    <string name="app_name">Onetouch Mute</string>
+
+</resources>

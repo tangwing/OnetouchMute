@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onetouch.mute"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:allowBackup="false" >
+        <!-- Register the widget -->
+        <receiver android:name="OnetouchMuteWidget" >
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" 
+                android:resource="@xml/widgetinfo"/>
+        </receiver>
+        <activity android:name=".OnetouchMuteActivity">
+		</activity>
+		<activity android:name=".OnetouchMuteTest"
+		    android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+    </application>
+</manifest>
